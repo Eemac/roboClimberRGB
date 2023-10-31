@@ -11,22 +11,22 @@ Control commands came from the robot RoboRIO digital IO pins (DIO 0, 1, and 2 + 
 2. Double-click on the RGBMode.ino file (inside the RGBMode folder) to open it in the Arduino IDE.
 
 ## Lighting Sequences
-1. **Lights off** These RGB lights are bright, power-hungry, and run hot. When nothing interesting is going on, turn them off.
-2. **Slow Blink Blue** An alert to the drive team that we are A) In Autonomous Mode. B) The robot has picked up 1 ball.
-3. **Slow Blink Yellow** An alert to the drive team that we are A) In Autonomous Mode. B) The robot has picked up 2 balls.
-4. **Solid Blue** An alert to the drive team that we are A) In TeleOp Mode. B) The robot has picked up 1 ball.
-5. **Solid Yellow** An alert to the drive team that we are A) In TeleOp Mode. B) The robot has picked up 2 balls.
-6. <font color="red">**Solid Red**</font> The robot is autonomously aligning to shoot a ball and spinning up the shooter flywheel. Don't Touch!
-7. **Fast Blink Green** The robot is aligned and autonomously shooting. Don't Touch!
-8. **HILLTOPPER PARTY MODE** When the robot is idle but on the competition floor, run a breathing animation that switches between blue and gold (our school colors). 
+| Command |                      Description                      |                                                   Reasoning                                                 |
+| ------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 0       | ${\textsf{Lights Off}}$                               | These RGB lights are bright, power-hungry, and run hot. When nothing is going on, turn them off.            |
+| 1       | ${\textsf{\color{royalblue}Slow Blink Blue}}$         | An alert to the drive team that we are A) In Autonomous Mode. B) The robot has picked up 1 ball.            |
+| 2       | ${\textsf{\color{goldenrod}Slow Blink Yellow}}$       | An alert to the drive team that we are A) In Autonomous Mode. B) The robot has picked up 2 balls.           |
+| 3       | ${\textsf{\color{blue}Solid Blue}}$                   | An alert to the drive team that we are A) In TeleOp Mode. B) The robot has picked up 1 ball.                |
+| 4       | ${\textsf{\color{yellow}Solid Yellow}}$               | An alert to the drive team that we are A) In TeleOp Mode. B) The robot has picked up 2 balls.               |
+| 5       | ${\textsf{\color{red}Solid Red}}$                     | The robot is autonomously aligning to shoot a ball and spinning up the shooter flywheel. Don't Touch!       |
+| 6       | ${\textsf{\color{forestgreen}Fast Blink Green}}$      | The robot is aligned and autonomously shooting. Don't Touch!                                                |
+| 7       | ${\textsf{\color{purple}HILLTOPPER PARTY MODE}}$      | When the robot is idle, run a breathing animation that switches between blue and gold (our school colors).  |
 
 ## Compiling Code for the Arduino Nano
 1. **Important** - Configure for the board. From the Menu, select Tools / Board: / Arduino AVR Boards / Arduino Nano
-![image info](./images/ArduinoNanoBoardSelection.png)
+![image info](./images/getBoard.png)
 2. Load Adafruit's NeoPixel Library (if you haven't already) - From the Menu, select Sketch / Include Library / Manage Libraries...  Search for "neopixel" and install the Adafruit NeoPixel library.
-![image info](./images/AdafruitNeoPixelLibraryManagerInstall.png)
-3. Add Adafruit's Library to the sketch - From the Menu, select Sketch / Include Library / Adafruit NeoPixel
-![image info](./images/AdafruitNeoPixelAddLibrary.png)
+![image info](./images/getLibrary.png)
 4. You can test if the sketch compiles by clicking the check mark button in the upper left corner of the IDE.
 
 ## Flashing Code for the Arduino Nano
