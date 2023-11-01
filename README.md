@@ -1,7 +1,7 @@
 # roboClimberRGB
-
+![image info](./images/leds.png)
 ## Overview
-This code controls two light bars mounted on my FRC team's (1732 Hilltoppers) competition robot.
+This code controls two light bars mounted on my highschool FRC team's (1732 Hilltoppers) competition robot.
 At the system's heart is an ATMEGA328p (Arduino Nano). WS2812B LED strips were soldered together in two chains of six.
 
 Control commands came from the robot RoboRIO digital IO pins (DIO 0, 1, and 2 + GND). Three pins were used for a total of 8 (2^3) different lighting sequences.
